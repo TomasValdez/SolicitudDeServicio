@@ -1,0 +1,90 @@
+.grid-main {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.content-card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 0.85rem;
+    /*
+    background-color: var(--color-tarjet);
+    */
+    border: 3px solid rgba(35, 13, 160, 0.3);
+    margin-top: 5px;
+    box-shadow: 3px 3px 3px 3px rgb(22, 21, 21);
+}
+
+.heard-card {
+    margin: 5px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.content-card:nth-child(odd) {
+    background-color: rgba(35, 13, 160, 0.3);
+}
+
+.heard-card {
+    font-family: 'Krona One', sans-serif;
+    border-bottom: 1px solid rgb(226, 219, 218)!important;
+    margin-top: 5px;
+    border-top-right-radius: 0.80rem;
+    border-top-left-radius: 0.80rem;
+    margin: 0px auto;
+    padding-bottom: 0.9rm;
+    text-align: center;
+    background-color: springgreen;
+}
+
+ul {
+    position: absolute;
+}
+
+li {
+    margin-bottom: 3px;
+}
+
+input[type="submit"] {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(22, 21, 21);
+    width: 9em;
+    height: 2.6em;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+input[type="submit"]:hover {
+    color: rgb(22, 21, 21);
+    background-color: tomato;
+}
+
+input[type="submit"]:checked {
+    border: none;
+}
+
+ul {
+    text-decoration: none;
+}
+
+input[type="submit"]:active {
+    border: none;
+}
+
+textarea {
+    position: absolute;
+    width: 90%;
+    height: 50px;
+    top: 40%;
+}
+
+@media screen and (max-width: 800px) {
+    .grid-main {
+        display: flex;
+        flex-direction: column;
+    }
+}

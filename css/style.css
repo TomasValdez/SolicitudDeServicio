@@ -1,0 +1,37 @@
+.fom_div {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.fom_div form input {
+    display: block;
+    margin: auto auto;
+}
+
+body {
+    background-color: brown;
+}
+
+label {
+    display: block;
+    font-size: 1.4em;
+    color: white;
+    margin: auto auto;
+}
+
+.mail {
+    border: none;
+    border-radius: 16px;
+    width: 300px;
+    height: 30px;
+    font-size: 25px;
+}
+
+input:focus {
+    outline: none;
+}
+
+select {
+    border-radius: 8px;
+    font-size: 16px;
+}
